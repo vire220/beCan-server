@@ -1,15 +1,30 @@
 'use strict';
 module.exports = function(app) {
-  var todoList = require('../controllers/becanServerController');
+  var becanCtrl = require('../controllers/becanServerController');
 
-  // todoList Routes
-  app.route('/tasks')
-    .get(todoList.list_all_tasks)
-    .post(todoList.create_a_task);
+  //get all steps  
+  app.route('/steps')
+    .get(becanCtrl.listAllSteps);
 
+  //get step by ID
+  app.route('/steps/:stepId');
 
-  app.route('/tasks/:taskId')
-    .get(todoList.read_a_task)
-    .put(todoList.update_a_task)
-    .delete(todoList.delete_a_task);
+  //get all sequences
+  app.route('/sequences');
+
+  //get sequence by ID
+  app.route('/sequences/:seqId');
+
+  //get steps in the sequence
+  app.route('/sequences/:seqId/steps');
+
+  //get step from sequence by ID
+  app.route('/sequences/:seqId/steps/:stepId');
+
+  //get all users
+  app.route('/users');
+
+  //get user by ID
+  app.route('/users/:userId');
+
 };

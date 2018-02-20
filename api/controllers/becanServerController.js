@@ -1,56 +1,55 @@
 'use strict';
 
 
-var mongoose = require('mongoose'),
-  Task = mongoose.model('Tasks');
+var mongoose = require('mongoose');
+var allSchemas = require('../models/becanServerModel');
+var Step = allSchemas.step,
+  Sequence = allSchemas.sequence;
 
-exports.list_all_tasks = function(req, res) {
-  Task.find({}, function(err, task) {
+exports.listAllSteps = function(req, res) {
+  Step.find({}, function(err, step) {
     if (err)
       res.send(err);
-    res.json(task);
+    res.json(step);
+  });
+};
+
+exports.createStep = function(req, res) {
+  var new_step = new Step(req.body);
+  new_step.save(function(err, step) {
+    if (err)
+      res.send(err);
+    res.json(step);
   });
 };
 
 
-
-
-exports.create_a_task = function(req, res) {
-  var new_task = new Task(req.body);
-  new_task.save(function(err, task) {
+exports.findStepById = function(req, res) {
+  Step.findById(req.params.stepId, function(err, step) {
     if (err)
       res.send(err);
-    res.json(task);
+    res.json(step);
   });
 };
 
 
-exports.read_a_task = function(req, res) {
-  Task.findById(req.params.taskId, function(err, task) {
+exports.updateStep = function(req, res) {
+  Step.findOneAndUpdate({ _id: req.params.stepId }, req.body, { new: true }, function(err, step) {
     if (err)
       res.send(err);
-    res.json(task);
+    res.json(step);
   });
 };
 
 
-exports.update_a_task = function(req, res) {
-  Task.findOneAndUpdate({_id: req.params.taskId}, req.body, {new: true}, function(err, task) {
+exports.deleteStep = function(req, res) {
+
+
+  Step.remove({
+    _id: req.params.stepId
+  }, function(err, step) {
     if (err)
       res.send(err);
-    res.json(task);
-  });
-};
-
-
-exports.delete_a_task = function(req, res) {
-
-
-  Task.remove({
-    _id: req.params.taskId
-  }, function(err, task) {
-    if (err)
-      res.send(err);
-    res.json({ message: 'Task successfully deleted' });
+    res.json({ message: 'Step successfully deleted' });
   });
 };

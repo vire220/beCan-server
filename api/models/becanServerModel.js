@@ -2,25 +2,44 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-
-var TaskSchema = new Schema({
+var StepSchema = new Schema({
   name: {
     type: String,
-    required: 'Kindly enter the name of the task'
   },
-  Created_date: {
-    type: Date,
-    default: Date.now
+  description: {
+    type: String
   },
-  status: {
-    type: [{
-      type: String,
-      enum: ['pending', 'ongoing', 'completed']
-    }],
-    default: ['pending']
-  }
+  content: {
+    type: String
+  },
+  location: {
+    lat: Number,
+    lon: Number,
+    description: String
+  },
+  beacon: {
+    id: String,
+    enabled: Boolean
+  },
+  Points: Number
 });
 
+var SequenceSchema = new Schema({
+  name: {
+    type: String,
+  },
+  description: {
+    type: String
+  },
+  content: {
+    type: String
+  },
+  Steps: [StepSchema],
+  FirstStep: StepSchema,
+  LastStep: StepSchema
+});
 
-
-module.exports = mongoose.model('Tasks', TaskSchema);
+module.exports = {
+  step: mongoose.model('Step', StepSchema),
+  sequence: mongoose.model('Sequence', SequenceSchema)
+};
