@@ -3,15 +3,9 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var StepSchema = new Schema({
-  name: {
-    type: String,
-  },
-  description: {
-    type: String
-  },
-  content: {
-    type: String
-  },
+  name: String,
+  description: String,
+  content: String,
   location: {
     lat: Number,
     lon: Number,
@@ -25,15 +19,9 @@ var StepSchema = new Schema({
 });
 
 var SequenceSchema = new Schema({
-  name: {
-    type: String,
-  },
-  description: {
-    type: String
-  },
-  content: {
-    type: String
-  },
+  name: String,
+  description: String,
+  content: String,
   Steps: [StepSchema],
   FirstStep: StepSchema,
   LastStep: StepSchema

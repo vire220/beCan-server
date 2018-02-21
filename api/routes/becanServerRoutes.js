@@ -4,10 +4,14 @@ module.exports = function(app) {
 
   //get all steps  
   app.route('/steps')
-    .get(becanCtrl.listAllSteps);
+    .get(becanCtrl.listAllSteps)
+    .post(becanCtrl.createStep);
 
   //get step by ID
-  app.route('/steps/:stepId');
+  app.route('/steps/:stepId')
+    .get(becanCtrl.findStepById)
+    .put(becanCtrl.updateStep)
+    .delete(becanCtrl.deleteStep);
 
   //get all sequences
   app.route('/sequences');

@@ -43,8 +43,6 @@ exports.updateStep = function(req, res) {
 
 
 exports.deleteStep = function(req, res) {
-
-
   Step.remove({
     _id: req.params.stepId
   }, function(err, step) {
