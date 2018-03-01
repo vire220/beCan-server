@@ -51,3 +51,11 @@ exports.deleteStep = function(req, res) {
     res.json({ message: 'Step successfully deleted' });
   });
 };
+
+exports.findStepByBeaconId = function(req, res) {
+  Step.findOne({ 'beacon.id' : req.params.beaconId }, function (err, step){
+    if (err)
+      res.send(err);
+    res.json(step);
+  });
+};

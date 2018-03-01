@@ -29,3 +29,44 @@
 2018-03-01T02:11:30.415Z - info: Connected to MongoDB
 2018-03-01T02:11:34.139Z - info: Request to /asdfsadf
 2018-03-01T02:11:34.140Z - info: Invalid request
+2018-03-01T02:34:27.828Z - info: Starting Log
+2018-03-01T02:34:27.861Z - info: Server started, listening on: 8080
+2018-03-01T02:34:27.891Z - info: Connected to MongoDB
+2018-03-01T02:35:29.471Z - info: Request to /favicon.ico
+2018-03-01T02:35:29.472Z - info: Invalid request
+2018-03-01T02:45:48.572Z - info: Request to /steps
+2018-03-01T04:31:28.471Z - info: Starting Log
+2018-03-01T04:31:28.502Z - info: Server started, listening on: 8080
+2018-03-01T04:31:28.536Z - info: Connected to MongoDB
+2018-03-01T04:32:03.911Z - info: Starting Log
+2018-03-01T04:32:03.940Z - info: Server started, listening on: 8080
+2018-03-01T04:32:03.966Z - info: Connected to MongoDB
+2018-03-01T04:33:46.215Z - info: Starting Log
+2018-03-01T04:33:46.247Z - info: Server started, listening on: 8080
+2018-03-01T04:33:46.273Z - info: Connected to MongoDB
+2018-03-01T04:34:23.036Z - info: Starting Log
+2018-03-01T04:34:23.070Z - info: Server started, listening on: 8080
+2018-03-01T04:34:23.098Z - info: Connected to MongoDB
+2018-03-01T04:36:21.687Z - info: Starting Log
+2018-03-01T04:36:21.717Z - info: Server started, listening on: 8080
+2018-03-01T04:36:21.745Z - info: Connected to MongoDB
+2018-03-01T04:37:05.753Z - info: Request to /steps
+2018-03-01T04:37:05.753Z - info: Invalid request
+2018-03-01T04:37:18.793Z - info: Starting Log
+2018-03-01T04:37:18.824Z - info: Server started, listening on: 8080
+2018-03-01T04:37:18.855Z - info: Connected to MongoDB
+2018-03-01T04:37:32.663Z - info: Request to /steps
+2018-03-01T04:37:41.033Z - info: Request to /steps/5a8cccd8187fe409af9177ac
+2018-03-01T04:37:44.670Z - info: Request to /steps
+2018-03-01T04:38:00.033Z - info: Request to /steps/test_becan_1
+2018-03-01T04:38:26.994Z - info: Request to /steps/
+2018-03-01T04:39:26.228Z - info: Starting Log
+2018-03-01T04:39:26.260Z - info: Server started, listening on: 8080
+2018-03-01T04:39:26.288Z - info: Connected to MongoDB
+2018-03-01T04:40:11.759Z - info: Starting Log
+2018-03-01T04:40:11.790Z - info: Server started, listening on: 8080
+2018-03-01T04:40:11.817Z - info: Connected to MongoDB
+2018-03-01T04:40:42.317Z - info: Request to /beacons/test_becan_1
+2018-03-01T04:40:50.596Z - info: Request to /beacons/test_becan_2
+2018-03-01T04:40:54.165Z - info: Request to /beacons/test_becan_1
+2018-03-01T04:52:27.324Z - info: Request to /beacons/test_becan_1

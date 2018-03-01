@@ -12,6 +12,9 @@ module.exports = function(app) {
     .get(becanCtrl.findStepById)
     .put(becanCtrl.updateStep)
     .delete(becanCtrl.deleteStep);
+    
+  app.route('/beacons/:beaconId')
+    .get(becanCtrl.findStepByBeaconId);
 
   //get all sequences
   app.route('/sequences');
