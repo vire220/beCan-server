@@ -70,3 +70,163 @@
 2018-03-01T04:40:50.596Z - info: Request to /beacons/test_becan_2
 2018-03-01T04:40:54.165Z - info: Request to /beacons/test_becan_1
 2018-03-01T04:52:27.324Z - info: Request to /beacons/test_becan_1
+2018-03-01T21:55:24.193Z - info: Starting Log
+2018-03-01T21:55:24.254Z - info: Server started, listening on: 8080
+2018-03-01T21:55:24.272Z - error:  MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+    at Pool.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/topologies/server.js:503:11)
+    at emitOne (events.js:96:13)
+    at Pool.emit (events.js:188:7)
+    at Connection.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:326:12)
+    at Connection.g (events.js:292:16)
+    at emitTwo (events.js:106:13)
+    at Connection.emit (events.js:191:7)
+    at Socket.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/connection.js:245:50)
+    at Socket.g (events.js:292:16)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at emitErrorNT (net.js:1277:8)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+2018-03-01T21:56:11.017Z - info: Starting Log
+2018-03-01T21:56:11.065Z - info: Server started, listening on: 8080
+2018-03-01T21:56:11.079Z - error:  MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+    at Pool.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/topologies/server.js:503:11)
+    at emitOne (events.js:96:13)
+    at Pool.emit (events.js:188:7)
+    at Connection.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:326:12)
+    at Connection.g (events.js:292:16)
+    at emitTwo (events.js:106:13)
+    at Connection.emit (events.js:191:7)
+    at Socket.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/connection.js:245:50)
+    at Socket.g (events.js:292:16)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at emitErrorNT (net.js:1277:8)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+2018-03-01T21:56:17.002Z - info: Starting Log
+2018-03-01T21:56:17.052Z - info: Server started, listening on: 8080
+2018-03-01T21:56:17.069Z - error:  MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+    at Pool.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/topologies/server.js:503:11)
+    at emitOne (events.js:96:13)
+    at Pool.emit (events.js:188:7)
+    at Connection.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:326:12)
+    at Connection.g (events.js:292:16)
+    at emitTwo (events.js:106:13)
+    at Connection.emit (events.js:191:7)
+    at Socket.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/connection.js:245:50)
+    at Socket.g (events.js:292:16)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at emitErrorNT (net.js:1277:8)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+2018-03-01T21:57:41.607Z - info: Starting Log
+2018-03-01T21:57:41.669Z - info: Server started, listening on: 8080
+2018-03-01T21:57:41.704Z - error:  MongoError: auth failed
+    at /home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:595:61
+    at authenticateStragglers (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:513:16)
+    at Connection.messageHandler (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:549:5)
+    at emitMessageHandler (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/connection.js:309:10)
+    at Socket.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/connection.js:452:17)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+2018-03-01T21:57:50.889Z - info: Starting Log
+2018-03-01T21:57:50.950Z - info: Server started, listening on: 8080
+2018-03-01T21:57:50.989Z - error:  MongoError: auth failed
+    at /home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:595:61
+    at authenticateStragglers (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:513:16)
+    at Connection.messageHandler (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:549:5)
+    at emitMessageHandler (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/connection.js:309:10)
+    at Socket.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/connection.js:452:17)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:547:20)
+2018-03-01T21:59:03.228Z - info: Starting Log
+2018-03-01T21:59:03.278Z - info: Server started, listening on: 8080
+2018-03-01T21:59:03.315Z - info: Connected to MongoDB
+2018-03-01T21:59:09.659Z - info: Starting Log
+2018-03-01T21:59:09.710Z - info: Server started, listening on: 8080
+2018-03-01T21:59:09.745Z - info: Connected to MongoDB
+2018-03-01T22:04:45.064Z - info: Starting Log
+2018-03-01T22:04:45.129Z - info: Server started, listening on: 8080
+2018-03-01T22:04:45.172Z - info: Connected to MongoDB
+2018-03-01T22:05:09.011Z - info: Starting Log
+2018-03-01T22:05:09.083Z - info: Server started, listening on: 8080
+2018-03-01T22:05:09.152Z - info: Connected to MongoDB
+2018-03-01T22:05:18.367Z - info: Invalid request
+2018-03-01T22:06:44.150Z - info: Starting Log
+2018-03-01T22:06:44.198Z - info: Server started, listening on: 8080
+2018-03-01T22:06:44.232Z - info: Connected to MongoDB
+2018-03-01T22:09:35.740Z - info: Starting Log
+2018-03-01T22:09:35.807Z - info: Server started, listening on: 8080
+2018-03-01T22:09:35.850Z - info: Connected to MongoDB
+2018-03-01T22:11:25.599Z - info: Starting Log
+2018-03-01T22:11:25.648Z - info: Server started, listening on: 8080
+2018-03-01T22:11:25.685Z - info: Connected to MongoDB
+2018-03-01T22:12:11.172Z - info: Starting Log
+2018-03-01T22:12:11.220Z - info: Server started, listening on: 8080
+2018-03-01T22:12:11.255Z - info: Connected to MongoDB
+2018-03-01T22:13:02.691Z - info: Starting Log
+2018-03-01T22:13:02.742Z - info: Server started, listening on: 8080
+2018-03-01T22:13:02.777Z - info: Connected to MongoDB
+2018-03-01T22:14:07.156Z - info: Starting Log
+2018-03-01T22:14:07.207Z - info: Server started, listening on: 8080
+2018-03-01T22:14:07.246Z - info: Connected to MongoDB
+2018-03-01T22:15:47.194Z - info: Starting Log
+2018-03-01T22:15:47.263Z - info: Server started, listening on: 8080
+2018-03-01T22:15:47.299Z - info: Connected to MongoDB
+2018-03-01T22:16:23.380Z - info: Starting Log
+2018-03-01T22:16:23.437Z - info: Server started, listening on: 8080
+2018-03-01T22:16:23.470Z - info: Connected to MongoDB
+2018-03-01T22:18:24.816Z - info: Starting Log
+2018-03-01T22:18:24.876Z - info: Server started, listening on: 8080
+2018-03-01T22:18:24.915Z - info: Connected to MongoDB
+2018-03-01T22:19:15.832Z - info: Starting Log
+2018-03-01T22:19:15.888Z - info: Server started, listening on: 8080
+2018-03-01T22:19:15.923Z - info: Connected to MongoDB
+2018-03-01T22:24:02.325Z - info: Starting Log
+2018-03-01T22:24:02.381Z - info: Server started, listening on: 8080
+2018-03-01T22:24:02.414Z - info: Connected to MongoDB
+2018-03-01T22:24:10.002Z - info: Starting Log
+2018-03-01T22:24:10.068Z - info: Server started, listening on: 8080
+2018-03-01T22:24:10.103Z - info: Connected to MongoDB
+2018-03-01T22:35:39.508Z - info: Starting Log
+2018-03-01T22:35:39.565Z - info: Server started, listening on: 8080
+2018-03-01T22:35:39.602Z - info: Connected to MongoDB
+2018-03-01T22:37:21.216Z - info: Starting Log
+2018-03-01T22:37:21.268Z - info: Server started, listening on: 8080
+2018-03-01T22:37:21.300Z - info: Connected to MongoDB
+2018-03-01T22:38:21.461Z - info: Starting Log
+2018-03-01T22:38:21.526Z - info: Server started, listening on: 8080
+2018-03-01T22:38:21.566Z - info: Connected to MongoDB
+2018-03-01T22:38:50.312Z - info: Starting Log
+2018-03-01T22:38:50.371Z - info: Server started, listening on: 8080
+2018-03-01T22:38:50.408Z - info: Connected to MongoDB
+2018-03-01T22:43:04.598Z - info: Starting Log
+2018-03-01T22:43:04.682Z - info: Server started, listening on: 8080
+2018-03-01T22:43:04.717Z - info: Connected to MongoDB
+2018-03-01T22:45:33.421Z - info: Starting Log
+2018-03-01T22:45:33.503Z - info: Server started, listening on: 8080
+2018-03-01T22:45:33.550Z - info: Connected to MongoDB
+2018-03-01T22:46:03.519Z - info: Starting Log
+2018-03-01T22:46:03.575Z - info: Server started, listening on: 8080
+2018-03-01T22:46:03.612Z - info: Connected to MongoDB
+2018-03-01T22:46:46.959Z - info: Starting Log
+2018-03-01T22:46:47.012Z - info: Server started, listening on: 8080
+2018-03-01T22:46:47.048Z - info: Connected to MongoDB
+2018-03-01T22:48:19.358Z - info: Starting Log
+2018-03-01T22:48:19.415Z - info: Server started, listening on: 8080
+2018-03-01T22:48:19.451Z - info: Connected to MongoDB
+2018-03-01T22:48:48.459Z - info: Starting Log
+2018-03-01T22:48:48.569Z - info: Server started, listening on: 8080
+2018-03-01T22:48:48.675Z - info: Connected to MongoDB
+2018-03-02T04:59:52.733Z - info: Invalid request
+2018-03-02T05:05:00.143Z - info: Starting Log
+2018-03-02T05:05:00.220Z - info: Server started, listening on: 8080
+2018-03-02T05:05:00.278Z - info: Connected to MongoDB

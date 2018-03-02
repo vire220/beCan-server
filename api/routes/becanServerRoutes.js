@@ -1,20 +1,20 @@
 'use strict';
-module.exports = function(app) {
+module.exports = function(app, passport) {
   var becanCtrl = require('../controllers/becanServerController');
+  
+      // process the signup form
+  app.post('/signup', passport.authenticate('local-signup', becanCtrl.createNewUser));
+  
+  //get all beacons  
+  app.route('/beacons')
+    .get(becanCtrl.listAllBeacons)
+    .post(becanCtrl.createBeacon);
 
-  //get all steps  
-  app.route('/steps')
-    .get(becanCtrl.listAllSteps)
-    .post(becanCtrl.createStep);
-
-  //get step by ID
-  app.route('/steps/:stepId')
-    .get(becanCtrl.findStepById)
-    .put(becanCtrl.updateStep)
-    .delete(becanCtrl.deleteStep);
-    
+  //get beacon by ID
   app.route('/beacons/:beaconId')
-    .get(becanCtrl.findStepByBeaconId);
+    .get(becanCtrl.findBeaconById)
+    .put(becanCtrl.updateBeacon)
+    .delete(becanCtrl.deleteBeacon);
 
   //get all sequences
   app.route('/sequences');
@@ -22,11 +22,11 @@ module.exports = function(app) {
   //get sequence by ID
   app.route('/sequences/:seqId');
 
-  //get steps in the sequence
-  app.route('/sequences/:seqId/steps');
+  //get beacons in the sequence
+  app.route('/sequences/:seqId/beacons');
 
-  //get step from sequence by ID
-  app.route('/sequences/:seqId/steps/:stepId');
+  //get beacon from sequence by ID
+  app.route('/sequences/:seqId/beacons/:beaconId');
 
   //get all users
   app.route('/users');

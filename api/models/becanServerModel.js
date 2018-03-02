@@ -2,32 +2,30 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var StepSchema = new Schema({
+var BeaconSchema = new Schema({
+  beaconId: String,
   name: String,
   description: String,
   content: String,
+  enabled: Boolean,
   location: {
     lat: Number,
     lon: Number,
     description: String
   },
-  beacon: {
-    id: String,
-    enabled: Boolean
-  },
-  Points: Number
+  points: Number
 });
 
 var SequenceSchema = new Schema({
   name: String,
   description: String,
   content: String,
-  Steps: [StepSchema],
-  FirstStep: StepSchema,
-  LastStep: StepSchema
+  beacons: [BeaconSchema],
+  firstBeacon: BeaconSchema,
+  lastBeacon: BeaconSchema
 });
 
 module.exports = {
-  step: mongoose.model('Step', StepSchema),
+  beacon: mongoose.model('Beacon', BeaconSchema),
   sequence: mongoose.model('Sequence', SequenceSchema)
 };
