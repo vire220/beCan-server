@@ -2,10 +2,9 @@
 
 
 var mongoose = require('mongoose');
-var allSchemas = require('../models/becanServerModel');
-var User = require("../models/user")
-var Beacon = allSchemas.beacon,
-  Sequence = allSchemas.sequence;
+var User = require("../models/user");
+var Beacon = require("../models/beacon");
+var Sequence = require("../models/sequence");
 
 exports.listAllBeacons = function(req, res) {
   Beacon.find({}, function(err, beacon) {
@@ -64,4 +63,13 @@ exports.createNewUser = function(err, user, info) {
       res.json(beacon);
     });
   }
+};
+
+exports.findFirstBeaconInSequence = function(req, res) {
+  Sequence.findOne({ 'sequenceId': req.params.sequenceId}, function(err, sequence){
+    if (err) {
+      res.send(err);
+    }
+    res.send(sequence.firstBeacon);
+  });
 };

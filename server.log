@@ -230,3 +230,6 @@
 2018-03-02T05:05:00.143Z - info: Starting Log
 2018-03-02T05:05:00.220Z - info: Server started, listening on: 8080
 2018-03-02T05:05:00.278Z - info: Connected to MongoDB
+2018-03-03T17:54:04.074Z - info: Starting Log
+2018-03-03T17:54:04.133Z - info: Server started, listening on: 8080
+2018-03-03T17:54:04.167Z - info: Connected to MongoDB

@@ -21,6 +21,9 @@ module.exports = function(app, passport) {
 
   //get sequence by ID
   app.route('/sequences/:seqId');
+  
+  app.route('/sequences/:seqId/first')
+  .get(becanCtrl.findFirstBeaconInSequence);
 
   //get beacons in the sequence
   app.route('/sequences/:seqId/beacons');
