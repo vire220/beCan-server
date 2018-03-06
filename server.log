@@ -1,235 +1,837 @@
-2018-03-01T02:00:14.666Z - info: Starting Log
-2018-03-01T02:00:14.699Z - info: Server started, listening on: 8080
-2018-03-01T02:00:14.738Z - info: Connected to MongoDB
-2018-03-01T02:00:23.015Z - info: body: [object Object]
-2018-03-01T02:02:15.456Z - info: Starting Log
-2018-03-01T02:02:15.491Z - info: Server started, listening on: 8080
-2018-03-01T02:02:15.524Z - info: Connected to MongoDB
-2018-03-01T02:02:20.069Z - info: body: [object Object]
-2018-03-01T02:02:32.587Z - info: Starting Log
-2018-03-01T02:02:32.615Z - info: Server started, listening on: 8080
-2018-03-01T02:02:32.655Z - info: Connected to MongoDB
-2018-03-01T02:02:36.022Z - info: 
-2018-03-01T02:04:09.985Z - info: Starting Log
-2018-03-01T02:04:10.018Z - info: Server started, listening on: 8080
-2018-03-01T02:04:10.044Z - info: Connected to MongoDB
-2018-03-01T02:04:14.194Z - info: [object Object]
-2018-03-01T02:09:28.501Z - info: Starting Log
-2018-03-01T02:09:28.534Z - info: Server started, listening on: 8080
-2018-03-01T02:09:28.562Z - info: Connected to MongoDB
-2018-03-01T02:09:37.393Z - info: Request to /steps/
-2018-03-01T02:10:24.492Z - info: Request to /asf
-2018-03-01T02:10:59.153Z - info: Starting Log
-2018-03-01T02:10:59.182Z - info: Server started, listening on: 8080
-2018-03-01T02:10:59.207Z - info: Connected to MongoDB
-2018-03-01T02:11:01.075Z - info: Request to /asdf
-2018-03-01T02:11:01.075Z - info: Invalid request to /asdf
-2018-03-01T02:11:30.361Z - info: Starting Log
-2018-03-01T02:11:30.390Z - info: Server started, listening on: 8080
-2018-03-01T02:11:30.415Z - info: Connected to MongoDB
-2018-03-01T02:11:34.139Z - info: Request to /asdfsadf
-2018-03-01T02:11:34.140Z - info: Invalid request
-2018-03-01T02:34:27.828Z - info: Starting Log
-2018-03-01T02:34:27.861Z - info: Server started, listening on: 8080
-2018-03-01T02:34:27.891Z - info: Connected to MongoDB
-2018-03-01T02:35:29.471Z - info: Request to /favicon.ico
-2018-03-01T02:35:29.472Z - info: Invalid request
-2018-03-01T02:45:48.572Z - info: Request to /steps
-2018-03-01T04:31:28.471Z - info: Starting Log
-2018-03-01T04:31:28.502Z - info: Server started, listening on: 8080
-2018-03-01T04:31:28.536Z - info: Connected to MongoDB
-2018-03-01T04:32:03.911Z - info: Starting Log
-2018-03-01T04:32:03.940Z - info: Server started, listening on: 8080
-2018-03-01T04:32:03.966Z - info: Connected to MongoDB
-2018-03-01T04:33:46.215Z - info: Starting Log
-2018-03-01T04:33:46.247Z - info: Server started, listening on: 8080
-2018-03-01T04:33:46.273Z - info: Connected to MongoDB
-2018-03-01T04:34:23.036Z - info: Starting Log
-2018-03-01T04:34:23.070Z - info: Server started, listening on: 8080
-2018-03-01T04:34:23.098Z - info: Connected to MongoDB
-2018-03-01T04:36:21.687Z - info: Starting Log
-2018-03-01T04:36:21.717Z - info: Server started, listening on: 8080
-2018-03-01T04:36:21.745Z - info: Connected to MongoDB
-2018-03-01T04:37:05.753Z - info: Request to /steps
-2018-03-01T04:37:05.753Z - info: Invalid request
-2018-03-01T04:37:18.793Z - info: Starting Log
-2018-03-01T04:37:18.824Z - info: Server started, listening on: 8080
-2018-03-01T04:37:18.855Z - info: Connected to MongoDB
-2018-03-01T04:37:32.663Z - info: Request to /steps
-2018-03-01T04:37:41.033Z - info: Request to /steps/5a8cccd8187fe409af9177ac
-2018-03-01T04:37:44.670Z - info: Request to /steps
-2018-03-01T04:38:00.033Z - info: Request to /steps/test_becan_1
-2018-03-01T04:38:26.994Z - info: Request to /steps/
-2018-03-01T04:39:26.228Z - info: Starting Log
-2018-03-01T04:39:26.260Z - info: Server started, listening on: 8080
-2018-03-01T04:39:26.288Z - info: Connected to MongoDB
-2018-03-01T04:40:11.759Z - info: Starting Log
-2018-03-01T04:40:11.790Z - info: Server started, listening on: 8080
-2018-03-01T04:40:11.817Z - info: Connected to MongoDB
-2018-03-01T04:40:42.317Z - info: Request to /beacons/test_becan_1
-2018-03-01T04:40:50.596Z - info: Request to /beacons/test_becan_2
-2018-03-01T04:40:54.165Z - info: Request to /beacons/test_becan_1
-2018-03-01T04:52:27.324Z - info: Request to /beacons/test_becan_1
-2018-03-01T21:55:24.193Z - info: Starting Log
-2018-03-01T21:55:24.254Z - info: Server started, listening on: 8080
-2018-03-01T21:55:24.272Z - error:  MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
-    at Pool.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/topologies/server.js:503:11)
-    at emitOne (events.js:96:13)
-    at Pool.emit (events.js:188:7)
-    at Connection.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:326:12)
-    at Connection.g (events.js:292:16)
-    at emitTwo (events.js:106:13)
-    at Connection.emit (events.js:191:7)
-    at Socket.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/connection.js:245:50)
-    at Socket.g (events.js:292:16)
-    at emitOne (events.js:96:13)
-    at Socket.emit (events.js:188:7)
-    at emitErrorNT (net.js:1277:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)
-2018-03-01T21:56:11.017Z - info: Starting Log
-2018-03-01T21:56:11.065Z - info: Server started, listening on: 8080
-2018-03-01T21:56:11.079Z - error:  MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
-    at Pool.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/topologies/server.js:503:11)
-    at emitOne (events.js:96:13)
-    at Pool.emit (events.js:188:7)
-    at Connection.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:326:12)
-    at Connection.g (events.js:292:16)
-    at emitTwo (events.js:106:13)
-    at Connection.emit (events.js:191:7)
-    at Socket.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/connection.js:245:50)
-    at Socket.g (events.js:292:16)
-    at emitOne (events.js:96:13)
-    at Socket.emit (events.js:188:7)
-    at emitErrorNT (net.js:1277:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)
-2018-03-01T21:56:17.002Z - info: Starting Log
-2018-03-01T21:56:17.052Z - info: Server started, listening on: 8080
-2018-03-01T21:56:17.069Z - error:  MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
-    at Pool.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/topologies/server.js:503:11)
-    at emitOne (events.js:96:13)
-    at Pool.emit (events.js:188:7)
-    at Connection.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:326:12)
-    at Connection.g (events.js:292:16)
-    at emitTwo (events.js:106:13)
-    at Connection.emit (events.js:191:7)
-    at Socket.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/connection.js:245:50)
-    at Socket.g (events.js:292:16)
-    at emitOne (events.js:96:13)
-    at Socket.emit (events.js:188:7)
-    at emitErrorNT (net.js:1277:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
-    at process._tickCallback (internal/process/next_tick.js:104:9)
-2018-03-01T21:57:41.607Z - info: Starting Log
-2018-03-01T21:57:41.669Z - info: Server started, listening on: 8080
-2018-03-01T21:57:41.704Z - error:  MongoError: auth failed
-    at /home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:595:61
-    at authenticateStragglers (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:513:16)
-    at Connection.messageHandler (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:549:5)
-    at emitMessageHandler (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/connection.js:309:10)
-    at Socket.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/connection.js:452:17)
-    at emitOne (events.js:96:13)
-    at Socket.emit (events.js:188:7)
-    at readableAddChunk (_stream_readable.js:176:18)
-    at Socket.Readable.push (_stream_readable.js:134:10)
-    at TCP.onread (net.js:547:20)
-2018-03-01T21:57:50.889Z - info: Starting Log
-2018-03-01T21:57:50.950Z - info: Server started, listening on: 8080
-2018-03-01T21:57:50.989Z - error:  MongoError: auth failed
-    at /home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:595:61
-    at authenticateStragglers (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:513:16)
-    at Connection.messageHandler (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/pool.js:549:5)
-    at emitMessageHandler (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/connection.js:309:10)
-    at Socket.<anonymous> (/home/ubuntu/workspace/becan-server-api/node_modules/mongodb-core/lib/connection/connection.js:452:17)
-    at emitOne (events.js:96:13)
-    at Socket.emit (events.js:188:7)
-    at readableAddChunk (_stream_readable.js:176:18)
-    at Socket.Readable.push (_stream_readable.js:134:10)
-    at TCP.onread (net.js:547:20)
-2018-03-01T21:59:03.228Z - info: Starting Log
-2018-03-01T21:59:03.278Z - info: Server started, listening on: 8080
-2018-03-01T21:59:03.315Z - info: Connected to MongoDB
-2018-03-01T21:59:09.659Z - info: Starting Log
-2018-03-01T21:59:09.710Z - info: Server started, listening on: 8080
-2018-03-01T21:59:09.745Z - info: Connected to MongoDB
-2018-03-01T22:04:45.064Z - info: Starting Log
-2018-03-01T22:04:45.129Z - info: Server started, listening on: 8080
-2018-03-01T22:04:45.172Z - info: Connected to MongoDB
-2018-03-01T22:05:09.011Z - info: Starting Log
-2018-03-01T22:05:09.083Z - info: Server started, listening on: 8080
-2018-03-01T22:05:09.152Z - info: Connected to MongoDB
-2018-03-01T22:05:18.367Z - info: Invalid request
-2018-03-01T22:06:44.150Z - info: Starting Log
-2018-03-01T22:06:44.198Z - info: Server started, listening on: 8080
-2018-03-01T22:06:44.232Z - info: Connected to MongoDB
-2018-03-01T22:09:35.740Z - info: Starting Log
-2018-03-01T22:09:35.807Z - info: Server started, listening on: 8080
-2018-03-01T22:09:35.850Z - info: Connected to MongoDB
-2018-03-01T22:11:25.599Z - info: Starting Log
-2018-03-01T22:11:25.648Z - info: Server started, listening on: 8080
-2018-03-01T22:11:25.685Z - info: Connected to MongoDB
-2018-03-01T22:12:11.172Z - info: Starting Log
-2018-03-01T22:12:11.220Z - info: Server started, listening on: 8080
-2018-03-01T22:12:11.255Z - info: Connected to MongoDB
-2018-03-01T22:13:02.691Z - info: Starting Log
-2018-03-01T22:13:02.742Z - info: Server started, listening on: 8080
-2018-03-01T22:13:02.777Z - info: Connected to MongoDB
-2018-03-01T22:14:07.156Z - info: Starting Log
-2018-03-01T22:14:07.207Z - info: Server started, listening on: 8080
-2018-03-01T22:14:07.246Z - info: Connected to MongoDB
-2018-03-01T22:15:47.194Z - info: Starting Log
-2018-03-01T22:15:47.263Z - info: Server started, listening on: 8080
-2018-03-01T22:15:47.299Z - info: Connected to MongoDB
-2018-03-01T22:16:23.380Z - info: Starting Log
-2018-03-01T22:16:23.437Z - info: Server started, listening on: 8080
-2018-03-01T22:16:23.470Z - info: Connected to MongoDB
-2018-03-01T22:18:24.816Z - info: Starting Log
-2018-03-01T22:18:24.876Z - info: Server started, listening on: 8080
-2018-03-01T22:18:24.915Z - info: Connected to MongoDB
-2018-03-01T22:19:15.832Z - info: Starting Log
-2018-03-01T22:19:15.888Z - info: Server started, listening on: 8080
-2018-03-01T22:19:15.923Z - info: Connected to MongoDB
-2018-03-01T22:24:02.325Z - info: Starting Log
-2018-03-01T22:24:02.381Z - info: Server started, listening on: 8080
-2018-03-01T22:24:02.414Z - info: Connected to MongoDB
-2018-03-01T22:24:10.002Z - info: Starting Log
-2018-03-01T22:24:10.068Z - info: Server started, listening on: 8080
-2018-03-01T22:24:10.103Z - info: Connected to MongoDB
-2018-03-01T22:35:39.508Z - info: Starting Log
-2018-03-01T22:35:39.565Z - info: Server started, listening on: 8080
-2018-03-01T22:35:39.602Z - info: Connected to MongoDB
-2018-03-01T22:37:21.216Z - info: Starting Log
-2018-03-01T22:37:21.268Z - info: Server started, listening on: 8080
-2018-03-01T22:37:21.300Z - info: Connected to MongoDB
-2018-03-01T22:38:21.461Z - info: Starting Log
-2018-03-01T22:38:21.526Z - info: Server started, listening on: 8080
-2018-03-01T22:38:21.566Z - info: Connected to MongoDB
-2018-03-01T22:38:50.312Z - info: Starting Log
-2018-03-01T22:38:50.371Z - info: Server started, listening on: 8080
-2018-03-01T22:38:50.408Z - info: Connected to MongoDB
-2018-03-01T22:43:04.598Z - info: Starting Log
-2018-03-01T22:43:04.682Z - info: Server started, listening on: 8080
-2018-03-01T22:43:04.717Z - info: Connected to MongoDB
-2018-03-01T22:45:33.421Z - info: Starting Log
-2018-03-01T22:45:33.503Z - info: Server started, listening on: 8080
-2018-03-01T22:45:33.550Z - info: Connected to MongoDB
-2018-03-01T22:46:03.519Z - info: Starting Log
-2018-03-01T22:46:03.575Z - info: Server started, listening on: 8080
-2018-03-01T22:46:03.612Z - info: Connected to MongoDB
-2018-03-01T22:46:46.959Z - info: Starting Log
-2018-03-01T22:46:47.012Z - info: Server started, listening on: 8080
-2018-03-01T22:46:47.048Z - info: Connected to MongoDB
-2018-03-01T22:48:19.358Z - info: Starting Log
-2018-03-01T22:48:19.415Z - info: Server started, listening on: 8080
-2018-03-01T22:48:19.451Z - info: Connected to MongoDB
-2018-03-01T22:48:48.459Z - info: Starting Log
-2018-03-01T22:48:48.569Z - info: Server started, listening on: 8080
-2018-03-01T22:48:48.675Z - info: Connected to MongoDB
-2018-03-02T04:59:52.733Z - info: Invalid request
-2018-03-02T05:05:00.143Z - info: Starting Log
-2018-03-02T05:05:00.220Z - info: Server started, listening on: 8080
-2018-03-02T05:05:00.278Z - info: Connected to MongoDB
-2018-03-03T17:54:04.074Z - info: Starting Log
-2018-03-03T17:54:04.133Z - info: Server started, listening on: 8080
-2018-03-03T17:54:04.167Z - info: Connected to MongoDB
+2018-03-05T22:28:44.808Z - info: Starting Log
+2018-03-05T22:28:44.875Z - info: Server started, listening on: 8080
+2018-03-05T22:28:44.922Z - info: Connected to MongoDB
+2018-03-05T22:29:39.096Z - info: Starting Log
+2018-03-05T22:29:39.157Z - info: Server started, listening on: 8080
+2018-03-05T22:29:39.200Z - info: Connected to MongoDB
+2018-03-05T22:32:16.026Z - info: Starting Log
+2018-03-05T22:32:16.092Z - info: Server started, listening on: 8080
+2018-03-05T22:32:16.142Z - info: Connected to MongoDB
+2018-03-05T22:32:32.824Z - info: Starting Log
+2018-03-05T22:32:32.884Z - info: Server started, listening on: 8080
+2018-03-05T22:32:32.931Z - info: Connected to MongoDB
+2018-03-05T22:35:45.997Z - info: Starting Log
+2018-03-05T22:35:46.059Z - info: Server started, listening on: 8080
+2018-03-05T22:35:46.107Z - info: Connected to MongoDB
+2018-03-05T22:37:03.169Z - info: Starting Log
+2018-03-05T22:37:03.226Z - info: Server started, listening on: 8080
+2018-03-05T22:37:03.274Z - info: Connected to MongoDB
+2018-03-05T22:42:07.094Z - info: Starting Log
+2018-03-05T22:42:07.158Z - info: Server started, listening on: 8080
+2018-03-05T22:42:07.203Z - info: Connected to MongoDB
+2018-03-05T22:47:33.851Z - info: Starting Log
+2018-03-05T22:47:33.912Z - info: Server started, listening on: 8080
+2018-03-05T22:47:33.956Z - info: Connected to MongoDB
+2018-03-05T22:48:29.419Z - info: Starting Log
+2018-03-05T22:48:29.483Z - info: Server started, listening on: 8080
+2018-03-05T22:48:29.533Z - info: Connected to MongoDB
+2018-03-05T22:49:23.980Z - info: Starting Log
+2018-03-05T22:49:24.044Z - info: Server started, listening on: 8080
+2018-03-05T22:49:24.090Z - info: Connected to MongoDB
+2018-03-05T22:50:48.768Z - info: Starting Log
+2018-03-05T22:50:48.828Z - info: Server started, listening on: 8080
+2018-03-05T22:50:48.870Z - info: Connected to MongoDB
+2018-03-05T22:52:38.590Z - info: Starting Log
+2018-03-05T22:52:38.646Z - info: Server started, listening on: 8080
+2018-03-05T22:52:38.689Z - info: Connected to MongoDB
+2018-03-05T22:53:10.865Z - info: Starting Log
+2018-03-05T22:53:10.927Z - info: Server started, listening on: 8080
+2018-03-05T22:53:10.973Z - info: Connected to MongoDB
+2018-03-05T22:59:04.547Z - info: Starting Log
+2018-03-05T22:59:04.616Z - info: Server started, listening on: 8080
+2018-03-05T22:59:04.665Z - info: Connected to MongoDB
+2018-03-05T23:01:29.828Z - info: Starting Log
+2018-03-05T23:01:29.888Z - info: Server started, listening on: 8080
+2018-03-05T23:01:29.933Z - info: Connected to MongoDB
+2018-03-05T23:01:39.997Z - info: Updating beacons for sequence Test Sequence 1, id: 5a9dcc53c0c71b11d0438f2e
+2018-03-05T23:02:38.929Z - info: Starting Log
+2018-03-05T23:02:38.989Z - info: Server started, listening on: 8080
+2018-03-05T23:02:39.033Z - info: Connected to MongoDB
+2018-03-05T23:03:25.578Z - info: Starting Log
+2018-03-05T23:03:25.637Z - info: Server started, listening on: 8080
+2018-03-05T23:03:25.682Z - info: Connected to MongoDB
+2018-03-05T23:03:40.579Z - info: Updating beacons for sequence Test Sequence 1 - id: 5a9dcccc805b8a11f5bdb174
+2018-03-05T23:06:48.782Z - info: Starting Log
+2018-03-05T23:06:48.841Z - info: Server started, listening on: 8080
+2018-03-05T23:06:48.884Z - info: Connected to MongoDB
+2018-03-05T23:06:57.171Z - info: Updating beacons for sequence Test Sequence 1 - id: 5a9dcd914132b3120d8d9ec0
+2018-03-05T23:06:57.172Z - info: 0
+2018-03-05T23:07:26.381Z - info: Starting Log
+2018-03-05T23:07:26.442Z - info: Server started, listening on: 8080
+2018-03-05T23:07:26.490Z - info: Connected to MongoDB
+2018-03-05T23:07:33.024Z - info: Updating beacons for sequence Test Sequence 1 - id: 5a9dcdb453d14412217acd5d
+2018-03-05T23:07:33.029Z - info:  strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=true, version=undefined, , _bsontype=ObjectID, 0=90, 1=157, 2=205, 3=180, 4=83, 5=209, 6=68, 7=18, 8=33, 9=122, 10=205, 11=93, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, , , , , , , stateNames=[require, modify, init, default, ignore], forEach=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, map=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, $ref=$, ownerDocument=undefined, fullPath=undefined, domain=null, save=function notify(val) {
+      var i = _this.length;
+      while (i--) {
+        if (!_this[i]) {
+          continue;
+        }
+        switch (event) {
+          // only swap for save event for now, we may change this to all event types later
+          case 'save':
+            val = _this[i];
+            break;
+          default:
+            // NO-OP
+            break;
+        }
+        _this[i].emit(event, val);
+      }
+    }, isNew=function notify(val) {
+      var i = _this.length;
+      while (i--) {
+        if (!_this[i]) {
+          continue;
+        }
+        switch (event) {
+          // only swap for save event for now, we may change this to all event types later
+          case 'save':
+            val = _this[i];
+            break;
+          default:
+            // NO-OP
+            break;
+        }
+        _this[i].emit(event, val);
+      }
+    }, _eventsCount=2, _maxListeners=0, $options=true, isNew=false, errors=undefined, name=Test Sequence 1, description=This is the first test sequence, content=Blah, blah, blah, html, blah..., beacons=[$ref=$["_doc"]["beacons"], $ref=$, __index=0, strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=undefined, version=undefined, , _bsontype=ObjectID, 0=90, 1=157, 2=205, 3=180, 4=83, 5=209, 6=68, 7=18, 8=33, 9=122, 10=205, 11=92, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, beaconId=require, , , , , beaconId=true, $ref=$["$__"]["activePaths"]["stateNames"], forEach=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, map=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, , $ref=$, fullPath=beacons, domain=null, save=[function notify(val) {
+      var i = _this.length;
+      while (i--) {
+        if (!_this[i]) {
+          continue;
+        }
+        switch (event) {
+          // only swap for save event for now, we may change this to all event types later
+          case 'save':
+            val = _this[i];
+            break;
+          default:
+            // NO-OP
+            break;
+        }
+        _this[i].emit(event, val);
+      }
+    }, function () {
+    _this.constructor.emit('save', _this);
+  }], isNew=[function notify(val) {
+      var i = _this.length;
+      while (i--) {
+        if (!_this[i]) {
+          continue;
+        }
+        switch (event) {
+          // only swap for save event for now, we may change this to all event types later
+          case 'save':
+            val = _this[i];
+            break;
+          default:
+            // NO-OP
+            break;
+        }
+        _this[i].emit(event, val);
+      }
+    }, function (val) {
+    _this.isNew = val;
+  }], _eventsCount=2, _maxListeners=0, , isNew=false, errors=undefined, lat=51.0111, lon=-114.1318, description=Mount Royal University, beaconId=test_becan_1, name=Test Beacon 1, description=This is the first test beacon., content=There is all sorts of stuff here, and look - A Quiz!, clue=The beCan lies near a place Google calls home..., enabled=true, points=100, quiz=[$ref=$["_doc"]["beacons"][0]["_doc"]["quiz"], $ref=$["_doc"]["beacons"][0], __index=0, strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=undefined, version=undefined, , _bsontype=ObjectID, 0=90, 1=157, 2=205, 3=180, 4=83, 5=209, 6=68, 7=18, 8=33, 9=122, 10=205, 11=91, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, , , , , , , $ref=$["$__"]["activePaths"]["stateNames"], forEach=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, map=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, , $ref=$, fullPath=beacons.quiz, domain=null, isNew=function (val) {
+    _this.isNew = val;
+  }, save=function () {
+    _this.constructor.emit('save', _this);
+  }, _eventsCount=2, _maxListeners=0, , isNew=false, errors=undefined, question=1. How does eat food?, answers=[Nom, Munch, Chomp, All of the above], correctAnswer=All of the above, $ref=$["_doc"]["beacons"][0]["_doc"]["quiz"][0]["$__"]["_id"], $ref=$["_doc"]["beacons"][0]["_doc"]["quiz"], $ref=$["_doc"]["beacons"][0], __index=1, strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=undefined, version=undefined, , _bsontype=ObjectID, 0=90, 1=157, 2=205, 3=180, 4=83, 5=209, 6=68, 7=18, 8=33, 9=122, 10=205, 11=90, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, , , , , , , $ref=$["$__"]["activePaths"]["stateNames"], forEach=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, map=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, , $ref=$, fullPath=beacons.quiz, domain=null, isNew=function (val) {
+    _this.isNew = val;
+  }, save=function () {
+    _this.constructor.emit('save', _this);
+  }, _eventsCount=2, _maxListeners=0, , isNew=false, errors=undefined, question=2. What am fire?, answers=[Such hot, Very burn, Many heat, All of the above], correctAnswer=All of the above, $ref=$["_doc"]["beacons"][0]["_doc"]["quiz"][1]["$__"]["_id"], $ref=$["_doc"]["beacons"][0]["_doc"]["quiz"], $ref=$["_doc"]["beacons"][0], __index=2, strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=undefined, version=undefined, , _bsontype=ObjectID, 0=90, 1=157, 2=205, 3=180, 4=83, 5=209, 6=68, 7=18, 8=33, 9=122, 10=205, 11=89, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, , , , , , , $ref=$["$__"]["activePaths"]["stateNames"], forEach=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, map=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, , $ref=$, fullPath=beacons.quiz, domain=null, isNew=function (val) {
+    _this.isNew = val;
+  }, save=function () {
+    _this.constructor.emit('save', _this);
+  }, _eventsCount=2, _maxListeners=0, , isNew=false, errors=undefined, question=3. What is hands?, answers=[Grab, 5, Scissors, All of the above], correctAnswer=All of the above, $ref=$["_doc"]["beacons"][0]["_doc"]["quiz"][2]["$__"]["_id"]], $ref=$["_doc"]["beacons"][0]["$__"]["_id"]], $ref=$["$__"]["_id"], __v=0
+2018-03-05T23:07:33.040Z - info: 0
+2018-03-05T23:08:20.378Z - info: Starting Log
+2018-03-05T23:08:20.438Z - info: Server started, listening on: 8080
+2018-03-05T23:08:20.480Z - info: Connected to MongoDB
+2018-03-05T23:08:24.615Z - info: Updating beacons for sequence Test Sequence 1 - id: 5a9dcde810b9a21237c2ac6e
+2018-03-05T23:08:24.621Z - info:  $ref=$, strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=true, version=undefined, , _bsontype=ObjectID, 0=90, 1=157, 2=205, 3=232, 4=16, 5=185, 6=162, 7=18, 8=55, 9=194, 10=172, 11=110, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, , , , , , , stateNames=[require, modify, init, default, ignore], forEach=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, map=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, $ref=$[0]["__parent"], ownerDocument=undefined, fullPath=undefined, domain=null, save=function notify(val) {
+      var i = _this.length;
+      while (i--) {
+        if (!_this[i]) {
+          continue;
+        }
+        switch (event) {
+          // only swap for save event for now, we may change this to all event types later
+          case 'save':
+            val = _this[i];
+            break;
+          default:
+            // NO-OP
+            break;
+        }
+        _this[i].emit(event, val);
+      }
+    }, isNew=function notify(val) {
+      var i = _this.length;
+      while (i--) {
+        if (!_this[i]) {
+          continue;
+        }
+        switch (event) {
+          // only swap for save event for now, we may change this to all event types later
+          case 'save':
+            val = _this[i];
+            break;
+          default:
+            // NO-OP
+            break;
+        }
+        _this[i].emit(event, val);
+      }
+    }, _eventsCount=2, _maxListeners=0, $options=true, isNew=false, errors=undefined, name=Test Sequence 1, description=This is the first test sequence, content=Blah, blah, blah, html, blah..., $ref=$, $ref=$[0]["__parent"]["$__"]["_id"], __v=0, __index=0, strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=undefined, version=undefined, , _bsontype=ObjectID, 0=90, 1=157, 2=205, 3=232, 4=16, 5=185, 6=162, 7=18, 8=55, 9=194, 10=172, 11=109, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, beaconId=require, , , , , beaconId=true, $ref=$[0]["__parent"]["$__"]["activePaths"]["stateNames"], forEach=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, map=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, , $ref=$[0]["__parent"], fullPath=beacons, domain=null, save=[function notify(val) {
+      var i = _this.length;
+      while (i--) {
+        if (!_this[i]) {
+          continue;
+        }
+        switch (event) {
+          // only swap for save event for now, we may change this to all event types later
+          case 'save':
+            val = _this[i];
+            break;
+          default:
+            // NO-OP
+            break;
+        }
+        _this[i].emit(event, val);
+      }
+    }, function () {
+    _this.constructor.emit('save', _this);
+  }], isNew=[function notify(val) {
+      var i = _this.length;
+      while (i--) {
+        if (!_this[i]) {
+          continue;
+        }
+        switch (event) {
+          // only swap for save event for now, we may change this to all event types later
+          case 'save':
+            val = _this[i];
+            break;
+          default:
+            // NO-OP
+            break;
+        }
+        _this[i].emit(event, val);
+      }
+    }, function (val) {
+    _this.isNew = val;
+  }], _eventsCount=2, _maxListeners=0, , isNew=false, errors=undefined, lat=51.0111, lon=-114.1318, description=Mount Royal University, beaconId=test_becan_1, name=Test Beacon 1, description=This is the first test beacon., content=There is all sorts of stuff here, and look - A Quiz!, clue=The beCan lies near a place Google calls home..., enabled=true, points=100, quiz=[$ref=$[0]["_doc"]["quiz"], $ref=$[0], __index=0, strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=undefined, version=undefined, , _bsontype=ObjectID, 0=90, 1=157, 2=205, 3=232, 4=16, 5=185, 6=162, 7=18, 8=55, 9=194, 10=172, 11=108, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, , , , , , , $ref=$[0]["__parent"]["$__"]["activePaths"]["stateNames"], forEach=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, map=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, , $ref=$[0]["__parent"], fullPath=beacons.quiz, domain=null, isNew=function (val) {
+    _this.isNew = val;
+  }, save=function () {
+    _this.constructor.emit('save', _this);
+  }, _eventsCount=2, _maxListeners=0, , isNew=false, errors=undefined, question=1. How does eat food?, answers=[Nom, Munch, Chomp, All of the above], correctAnswer=All of the above, $ref=$[0]["_doc"]["quiz"][0]["$__"]["_id"], $ref=$[0]["_doc"]["quiz"], $ref=$[0], __index=1, strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=undefined, version=undefined, , _bsontype=ObjectID, 0=90, 1=157, 2=205, 3=232, 4=16, 5=185, 6=162, 7=18, 8=55, 9=194, 10=172, 11=107, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, , , , , , , $ref=$[0]["__parent"]["$__"]["activePaths"]["stateNames"], forEach=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, map=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, , $ref=$[0]["__parent"], fullPath=beacons.quiz, domain=null, isNew=function (val) {
+    _this.isNew = val;
+  }, save=function () {
+    _this.constructor.emit('save', _this);
+  }, _eventsCount=2, _maxListeners=0, , isNew=false, errors=undefined, question=2. What am fire?, answers=[Such hot, Very burn, Many heat, All of the above], correctAnswer=All of the above, $ref=$[0]["_doc"]["quiz"][1]["$__"]["_id"], $ref=$[0]["_doc"]["quiz"], $ref=$[0], __index=2, strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=undefined, version=undefined, , _bsontype=ObjectID, 0=90, 1=157, 2=205, 3=232, 4=16, 5=185, 6=162, 7=18, 8=55, 9=194, 10=172, 11=106, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, , , , , , , $ref=$[0]["__parent"]["$__"]["activePaths"]["stateNames"], forEach=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, map=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, , $ref=$[0]["__parent"], fullPath=beacons.quiz, domain=null, isNew=function (val) {
+    _this.isNew = val;
+  }, save=function () {
+    _this.constructor.emit('save', _this);
+  }, _eventsCount=2, _maxListeners=0, , isNew=false, errors=undefined, question=3. What is hands?, answers=[Grab, 5, Scissors, All of the above], correctAnswer=All of the above, $ref=$[0]["_doc"]["quiz"][2]["$__"]["_id"]], $ref=$[0]["$__"]["_id"]
+2018-03-05T23:08:24.633Z - info: 0
+2018-03-05T23:11:45.349Z - info: Starting Log
+2018-03-05T23:11:45.407Z - info: Server started, listening on: 8080
+2018-03-05T23:11:45.449Z - info: Connected to MongoDB
+2018-03-05T23:11:52.682Z - info: Updating beacons for sequence Test Sequence 1 - id: 5a9dceb862164e124e4169dd
+2018-03-05T23:11:52.683Z - info: 
+2018-03-05T23:11:52.683Z - info: 0
+2018-03-05T23:16:13.552Z - info: Starting Log
+2018-03-05T23:16:13.614Z - info: Server started, listening on: 8080
+2018-03-05T23:16:13.658Z - info: Connected to MongoDB
+2018-03-05T23:16:26.947Z - info: Updating beacons for sequence Test Sequence 1 - id: 5a9dcfca461dcb126195c98c
+2018-03-05T23:16:26.955Z - info:  $ref=$, strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=true, version=undefined, , _bsontype=ObjectID, 0=90, 1=157, 2=207, 3=202, 4=70, 5=29, 6=203, 7=18, 8=97, 9=149, 10=201, 11=140, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, , , , , , , stateNames=[require, modify, init, default, ignore], forEach=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, map=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, $ref=$[0]["__parent"], ownerDocument=undefined, fullPath=undefined, domain=null, save=function notify(val) {
+      var i = _this.length;
+      while (i--) {
+        if (!_this[i]) {
+          continue;
+        }
+        switch (event) {
+          // only swap for save event for now, we may change this to all event types later
+          case 'save':
+            val = _this[i];
+            break;
+          default:
+            // NO-OP
+            break;
+        }
+        _this[i].emit(event, val);
+      }
+    }, isNew=function notify(val) {
+      var i = _this.length;
+      while (i--) {
+        if (!_this[i]) {
+          continue;
+        }
+        switch (event) {
+          // only swap for save event for now, we may change this to all event types later
+          case 'save':
+            val = _this[i];
+            break;
+          default:
+            // NO-OP
+            break;
+        }
+        _this[i].emit(event, val);
+      }
+    }, _eventsCount=2, _maxListeners=0, $options=true, isNew=false, errors=undefined, name=Test Sequence 1, description=This is the first test sequence, content=Blah, blah, blah, html, blah..., $ref=$, $ref=$[0]["__parent"]["$__"]["_id"], __v=0, __index=0, strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=undefined, version=undefined, , _bsontype=ObjectID, 0=90, 1=157, 2=207, 3=202, 4=70, 5=29, 6=203, 7=18, 8=97, 9=149, 10=201, 11=139, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, beaconId=require, , , , , beaconId=true, $ref=$[0]["__parent"]["$__"]["activePaths"]["stateNames"], forEach=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, map=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, , $ref=$[0]["__parent"], fullPath=beacons, domain=null, save=[function notify(val) {
+      var i = _this.length;
+      while (i--) {
+        if (!_this[i]) {
+          continue;
+        }
+        switch (event) {
+          // only swap for save event for now, we may change this to all event types later
+          case 'save':
+            val = _this[i];
+            break;
+          default:
+            // NO-OP
+            break;
+        }
+        _this[i].emit(event, val);
+      }
+    }, function () {
+    _this.constructor.emit('save', _this);
+  }], isNew=[function notify(val) {
+      var i = _this.length;
+      while (i--) {
+        if (!_this[i]) {
+          continue;
+        }
+        switch (event) {
+          // only swap for save event for now, we may change this to all event types later
+          case 'save':
+            val = _this[i];
+            break;
+          default:
+            // NO-OP
+            break;
+        }
+        _this[i].emit(event, val);
+      }
+    }, function (val) {
+    _this.isNew = val;
+  }], _eventsCount=2, _maxListeners=0, , isNew=false, errors=undefined, lat=51.0111, lon=-114.1318, description=Mount Royal University, beaconId=test_becan_1, name=Test Beacon 1, description=This is the first test beacon., content=There is all sorts of stuff here, and look - A Quiz!, clue=The beCan lies near a place Google calls home..., enabled=true, points=100, quiz=[$ref=$[0]["_doc"]["quiz"], $ref=$[0], __index=0, strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=undefined, version=undefined, , _bsontype=ObjectID, 0=90, 1=157, 2=207, 3=202, 4=70, 5=29, 6=203, 7=18, 8=97, 9=149, 10=201, 11=138, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, , , , , , , $ref=$[0]["__parent"]["$__"]["activePaths"]["stateNames"], forEach=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, map=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, , $ref=$[0]["__parent"], fullPath=beacons.quiz, domain=null, isNew=function (val) {
+    _this.isNew = val;
+  }, save=function () {
+    _this.constructor.emit('save', _this);
+  }, _eventsCount=2, _maxListeners=0, , isNew=false, errors=undefined, question=1. How does eat food?, answers=[Nom, Munch, Chomp, All of the above], correctAnswer=All of the above, $ref=$[0]["_doc"]["quiz"][0]["$__"]["_id"], $ref=$[0]["_doc"]["quiz"], $ref=$[0], __index=1, strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=undefined, version=undefined, , _bsontype=ObjectID, 0=90, 1=157, 2=207, 3=202, 4=70, 5=29, 6=203, 7=18, 8=97, 9=149, 10=201, 11=137, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, , , , , , , $ref=$[0]["__parent"]["$__"]["activePaths"]["stateNames"], forEach=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, map=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, , $ref=$[0]["__parent"], fullPath=beacons.quiz, domain=null, isNew=function (val) {
+    _this.isNew = val;
+  }, save=function () {
+    _this.constructor.emit('save', _this);
+  }, _eventsCount=2, _maxListeners=0, , isNew=false, errors=undefined, question=2. What am fire?, answers=[Such hot, Very burn, Many heat, All of the above], correctAnswer=All of the above, $ref=$[0]["_doc"]["quiz"][1]["$__"]["_id"], $ref=$[0]["_doc"]["quiz"], $ref=$[0], __index=2, strictMode=true, selected=undefined, shardval=undefined, saveError=undefined, validationError=undefined, adhocPaths=undefined, removing=undefined, inserting=undefined, version=undefined, , _bsontype=ObjectID, 0=90, 1=157, 2=207, 3=202, 4=70, 5=29, 6=203, 7=18, 8=97, 9=149, 10=201, 11=136, populate=undefined, populated=undefined, wasPopulated=false, scope=undefined, , , , , , , $ref=$[0]["__parent"]["$__"]["activePaths"]["stateNames"], forEach=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, map=function () {
+    var numArgs = arguments.length,
+        states = utils.args(arguments, 0, numArgs - 1),
+        callback = arguments[numArgs - 1];
+
+    if (!states.length) states = this.stateNames;
+
+    var _this = this;
+
+    var paths = states.reduce(function(paths, state) {
+      return paths.concat(Object.keys(_this.states[state]));
+    }, []);
+
+    return paths[iterMethod](function(path, i, paths) {
+      return callback(path, i, paths);
+    });
+  }, , $ref=$[0]["__parent"], fullPath=beacons.quiz, domain=null, isNew=function (val) {
+    _this.isNew = val;
+  }, save=function () {
+    _this.constructor.emit('save', _this);
+  }, _eventsCount=2, _maxListeners=0, , isNew=false, errors=undefined, question=3. What is hands?, answers=[Grab, 5, Scissors, All of the above], correctAnswer=All of the above, $ref=$[0]["_doc"]["quiz"][2]["$__"]["_id"]], $ref=$[0]["$__"]["_id"]
+2018-03-05T23:16:26.970Z - info: 0
+2018-03-05T23:27:21.153Z - info: Starting Log
+2018-03-05T23:27:21.214Z - info: Server started, listening on: 8080
+2018-03-05T23:27:21.255Z - info: Connected to MongoDB
+2018-03-05T23:34:07.125Z - info: Starting Log
+2018-03-05T23:34:07.183Z - info: Server started, listening on: 8080
+2018-03-05T23:34:07.224Z - info: Connected to MongoDB
+2018-03-05T23:34:31.213Z - info: Starting Log
+2018-03-05T23:34:31.282Z - info: Server started, listening on: 8080
+2018-03-05T23:34:31.326Z - info: Connected to MongoDB
+2018-03-05T23:35:25.192Z - info: Starting Log
+2018-03-05T23:35:25.255Z - info: Server started, listening on: 8080
+2018-03-05T23:35:25.294Z - info: Connected to MongoDB
+2018-03-05T23:38:22.203Z - info: Starting Log
+2018-03-05T23:38:22.266Z - info: Server started, listening on: 8080
+2018-03-05T23:38:22.309Z - info: Connected to MongoDB
+2018-03-05T23:41:59.481Z - info: Starting Log
+2018-03-05T23:41:59.538Z - info: Server started, listening on: 8080
+2018-03-05T23:41:59.579Z - info: Connected to MongoDB
+2018-03-05T23:43:38.932Z - info: Starting Log
+2018-03-05T23:43:38.995Z - info: Server started, listening on: 8080
+2018-03-05T23:43:39.037Z - info: Connected to MongoDB
+2018-03-05T23:44:00.581Z - info: Invalid request
+2018-03-05T23:45:07.493Z - info: Invalid request

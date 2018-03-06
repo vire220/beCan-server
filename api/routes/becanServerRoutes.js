@@ -17,7 +17,9 @@ module.exports = function(app, passport) {
     .delete(becanCtrl.deleteBeacon);
 
   //get all sequences
-  app.route('/sequences');
+  app.route('/sequences')
+  .get(becanCtrl.listAllSequences)
+  .post(becanCtrl.createNewSequence);
 
   //get sequence by ID
   app.route('/sequences/:seqId');

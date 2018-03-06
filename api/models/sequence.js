@@ -1,13 +1,12 @@
 var mongoose = require("mongoose");
+var winston = require('winston');
 var BeaconSchema = require("./beacon.js");
 
-var SequenceSchema = new Schema({
+var SequenceSchema = new mongoose.Schema({
   name: String,
   description: String,
   content: String,
-  beacons: [BeaconSchema],
-  firstBeacon: BeaconSchema,
-  lastBeacon: BeaconSchema
+  beacons: [{type: mongoose.Schema.Types.ObjectId, ref: 'Beacon'}]
 });
 
-module.exports = mongoose.model('Sequence', SequenceSchema);
+module.exports = SequenceSchema;

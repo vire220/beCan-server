@@ -1,7 +1,12 @@
 var mongoose = require("mongoose");
-var QuestionSchema = require("./question.js");
 
-var BeaconSchema = new Schema({
+var QuestionSchema = new mongoose.Schema({
+    answers: [String],
+    question: String,
+    correctAnswer: String
+});
+
+var BeaconSchema = new mongoose.Schema({
   beaconId: {
       type: String,
       required: [true, "Missing beaconId"],
@@ -24,9 +29,7 @@ var BeaconSchema = new Schema({
       type: Number,
       min: 0
   },
-  quiz: {
-    questions: [QuestionSchema]
-  }
+  quiz: [QuestionSchema]
 });
 
-module.exports = mongoose.model('Beacon', BeaconSchema);
+module.exports = BeaconSchema;
