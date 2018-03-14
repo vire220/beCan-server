@@ -58,6 +58,10 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 var routes = require('./api/routes/becanServerRoutes');
 routes(app, passport);
 
+app.use('/', function(req, res){
+  res.sendfile('./public/index.html');
+});
+
 app.use(function(req, res) {
   winston.info("Invalid request");
   res.status(404).send({ url: req.originalUrl + ' not found' })

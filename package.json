@@ -13,9 +13,6 @@
   ],
   "author": "Alex McCreadie",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^1.15.0"
-  },
   "dependencies": {
     "bcrypt-nodejs": "latest",
     "body-parser": "^1.18.2",
