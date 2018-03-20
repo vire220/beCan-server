@@ -1,8 +1,6 @@
-'use strict';
-
+// controllers/becanServerController.js
 
 var mongoose = require('mongoose');
-var User = require("../models/user");
 var BeaconSchema = require("../models/beacon");
 var SequenceSchema = require("../models/sequence");
 

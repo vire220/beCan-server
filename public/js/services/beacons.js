@@ -1,6 +1,6 @@
-// js/services/todos.js
+// js/services/beacons.js
 
-angular.module('beaconService', [])
+angular.module('becanService', [])
 
 .factory('Beacons', function($http){
     return {

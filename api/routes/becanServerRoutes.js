@@ -1,42 +1,39 @@
-'use strict';
-module.exports = function(app, passport) {
+// routes/becanServerRoutes.js
+
+module.exports = function(app) {
   var becanCtrl = require('../controllers/becanServerController');
   
-      // process the signup form
-  app.post('/signup', passport.authenticate('local-signup', becanCtrl.createNewUser));
+  // api =======================================================================
+  
+  // beacon routes -------------------------------------------------------------
   
   //get all beacons  
-  app.route('/beacons')
+  app.route('/api/beacons')
     .get(becanCtrl.listAllBeacons)
     .post(becanCtrl.createBeacon);
 
   //get beacon by ID
-  app.route('/beacons/:beaconId')
+  app.route('/api/beacons/:beaconId')
     .get(becanCtrl.findBeaconById)
     .put(becanCtrl.updateBeacon)
     .delete(becanCtrl.deleteBeacon);
+    
+  // sequence routes -----------------------------------------------------------
 
   //get all sequences
-  app.route('/sequences')
+  app.route('/api/sequences')
   .get(becanCtrl.listAllSequences)
   .post(becanCtrl.createNewSequence);
 
   //get sequence by ID
-  app.route('/sequences/:seqId');
+  app.route('/api/sequences/:seqId');
   
-  app.route('/sequences/:seqId/first')
+  app.route('/api/sequences/:seqId/first')
   .get(becanCtrl.findFirstBeaconInSequence);
 
   //get beacons in the sequence
-  app.route('/sequences/:seqId/beacons');
+  app.route('/api/sequences/:seqId/beacons');
 
   //get beacon from sequence by ID
-  app.route('/sequences/:seqId/beacons/:beaconId');
-
-  //get all users
-  app.route('/users');
-
-  //get user by ID
-  app.route('/users/:userId');
-
+  app.route('/api/sequences/:seqId/beacons/:beaconId');
 };

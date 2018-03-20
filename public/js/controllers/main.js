@@ -1,9 +1,31 @@
 // js/controllers/main.js
 
-angular.module('beaconController', [])
+angular.module('becanController', [])
 
-.controller('mainController', function($scope, $http){
-    $scope.formData = {};
-    
-    
-});
+    .controller('mainController', function($scope, $http, Beacons) {
+        $scope.formData = {};
+
+        // when landing on the page, get all beacons and show them
+        Beacons.get()
+            .success(function(data) {
+                $scope.beacons = data;
+            });
+
+        // when submitting the add form, send the text to the node API
+        $scope.createBeacon = function() {
+            if (!$.isEmptyObject($scope.formData)) {
+                Beacons.create($scope.formData)
+                    .success(function(data) {
+                        $scope.formData = {}; // clear the form so our user is ready to enter another
+                        $scope.beacons = data; // assign our new list of todos
+                    });
+            }
+        };
+
+        $scope.deleteBeacon = function(id) {
+            Beacons.delete(id)
+                .success(function(data) {
+                    $scope.beacons = data; // assign our new list of beacons
+                });
+        };
+    });

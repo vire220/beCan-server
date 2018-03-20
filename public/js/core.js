@@ -1,3 +1,3 @@
-// js/core.js
+// public/core.js
 
-angular.module('beCanManagement', ['beaconController', 'beaconService']);
+angular.module('becanMgmt', ['becanController', 'becanService']);

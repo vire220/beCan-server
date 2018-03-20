@@ -1,15 +1,45 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Index Page</title>
-        
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js"></script><!-- load angular 1.2.4 -->
 
-        <script src="js/controllers/main.js"></script> <!-- load up our controller -->
-        <script src="js/services/beacons.js"></script> <!-- load our todo service -->
-        <script src="js/core.js"></script> <!-- load our main application -->
-        
-    </head>
-    <body>
-    </body>
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="becanMgmt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BeCan Management Page</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" />
+    <link type="text/css" rel="stylesheet" href="./css/styles.css" />
+    
+    <script src="js/controllers/main.js"></script>
+    <script src="js/services/beacons.js"></script>
+    <script src="js/core.js"></script>
+
+</head>
+
+<body ng-controller="mainController">
+
+    <div class="container">
+        <ul class="collapsible" data-collapsible="accordion">
+            <li ng-repeat="beacon in beacons">
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>{{ beacon.name }}</div>
+                <div class="collapsible-body"><span>{{ beacon }}</span></div>
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+        });
+    </script>
+</body>
+
 </html>
