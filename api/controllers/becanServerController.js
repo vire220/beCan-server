@@ -44,7 +44,7 @@ exports.updateBeacon = function(req, res) {
 
 exports.deleteBeacon = function(req, res) {
   Beacon.remove({
-    _id: req.params.beaconId
+    beaconId: req.params.beaconId
   }, function(err, beacon) {
     if (err)
       res.send(err);

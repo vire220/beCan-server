@@ -40,17 +40,34 @@
                                 <input disabled id="{{ 'question' + ($index + 1) + '_text' }}" type="text" ng-model="question.question">
                                 <label for="{{ 'question' + ($index + 1) + '_text' }}" class="active">Question</label>
                             </div>
-
                             <div class="input-field">
-                                <select id="{{ 'question' + ($index + 1) + '_correct-answer' }}" name="ngvalueselect" ng-model="question.correctAnswer">
-                                    <option value="" disabled selected>Choose your option</option>
-                                    <option ng-value="question.answers[0]">Answer 1</option>
-                                    <option ng-value="question.answers[1]">Answer 2</option>
-                                    <option ng-value="question.answers[2]">Answer 3</option>
-                                    <option ng-value="question.answers[3]">Answer 4</option>
-                                </select>
-                                <label for="{{ 'question' + ($index + 1) + '_correct-answer' }}" class="active">Correct Answer</label>
+                                <span>Correct Answer</span>
+                                <p>
+                                    <label>
+                                        <input disabled name="{{ 'question' + ($index + 1) + '_correct-answer-select' }}" type="radio" ng-model="question.correctAnswer" ng-value="question.answers[0]" />
+                                        <span>{{ question.answers[0] }}</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input disabled name="{{ 'question' + ($index + 1) + '_correct-answer-select' }}" type="radio" ng-model="question.correctAnswer" ng-value="question.answers[1]" />
+                                        <span>{{ question.answers[1] }}</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input disabled name="{{ 'question' + ($index + 1) + '_correct-answer-select' }}" type="radio" ng-model="question.correctAnswer" ng-value="question.answers[2]" />
+                                        <span>{{ question.answers[2] }}</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input disabled name="{{ 'question' + ($index + 1) + '_correct-answer-select' }}" type="radio" ng-model="question.correctAnswer" ng-value="question.answers[3]" />
+                                        <span>{{ question.answers[3] }}</span>
+                                    </label>
+                                </p>
                             </div>
+
                         </div>
                         <div class="col s6">
                             <div class="input-field">
@@ -74,7 +91,8 @@
 
                     <button class="btn waves-effect waves-light" id="edit-action" ng-click="editAction(beacon.beaconId)">Edit</button>
                     <button class="hide btn waves-effect waves-light" type="submit" id="update-action" ng-click="updateBeacon(beacon)">Save</button>
-                    <span>{{ updateMessage }}</span>
+                    <button class="hide btn red waves-effect waves-light" id="delete-action" ng-click="deleteBeacon(beacon.beaconId)">Delete</button>
+                    <p>{{ updateMessage }}</p>
                 </form>
             </div>
         </li>
