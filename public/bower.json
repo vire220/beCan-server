@@ -1,0 +1,21 @@
+{
+  "name": "becan-server-mgmt",
+  "homepage": "https://github.com/vire220/beCan-server",
+  "authors": [
+    "Alex McCreadie <vire220@yahoo.ca>"
+  ],
+  "description": "Management page for BeCan Server",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "json-formatter": "^0.7.0"
+  }
+}

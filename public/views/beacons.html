@@ -1,0 +1,82 @@
+<div>
+    <ul class="collapsible" data-collapsible="expandable">
+        <li ng-repeat="beacon in beacons">
+            <div class="collapsible-header"><i class="material-icons">settings_input_antenna</i>{{ beacon.name }}</div>
+            <div class="collapsible-body">
+                <form id="form-{{ beacon.beaconId }}">
+                    <h5>Beacon Information</h5>
+                    <div class="row">
+                        <input disabled type="checkbox" class="filled-in" id="enabled" ng-model="beacon.enabled" />
+                        <label for="enabled">Enabled</label>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input disabled id="beacon_id" type="text" ng-model="beacon.beaconId">
+                            <label for="beacon_id" class="active">Beacon ID</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input disabled id="beacon_name" type="text" ng-model="beacon.name">
+                            <label for="beacon_name" class="active">Beacon Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea disabled id="beacon-desc" class="materialize-textarea" ng-model="beacon.description"></textarea>
+                            <label for="beacon-desc" class="active">Description</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea disabled id="beacon-clue" class="materialize-textarea" ng-model="beacon.clue"></textarea>
+                            <label for="beacon-clue" class="active">Clue</label>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <h5>Quiz</h5>
+                    <div class="row" ng-repeat="question in beacon.quiz">
+                        <h6>{{ 'Question ' + ($index + 1) }}</h6>
+                        <div class="col s6">
+                            <div class="input-field">
+                                <input disabled id="{{ 'question' + ($index + 1) + '_text' }}" type="text" ng-model="question.question">
+                                <label for="{{ 'question' + ($index + 1) + '_text' }}" class="active">Question</label>
+                            </div>
+
+                            <div class="input-field">
+                                <select id="{{ 'question' + ($index + 1) + '_correct-answer' }}" name="ngvalueselect" ng-model="question.correctAnswer">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option ng-value="question.answers[0]">Answer 1</option>
+                                    <option ng-value="question.answers[1]">Answer 2</option>
+                                    <option ng-value="question.answers[2]">Answer 3</option>
+                                    <option ng-value="question.answers[3]">Answer 4</option>
+                                </select>
+                                <label for="{{ 'question' + ($index + 1) + '_correct-answer' }}" class="active">Correct Answer</label>
+                            </div>
+                        </div>
+                        <div class="col s6">
+                            <div class="input-field">
+                                <input disabled id="{{ 'question' + ($index + 1) + '_answer1' }}" type="text" ng-model="question.answers[0]">
+                                <label for="{{ 'question' + ($index + 1) + '_answer1' }}" class="active">Answer 1</label>
+                            </div>
+                            <div class="input-field">
+                                <input disabled id="{{ 'question' + ($index + 1) + '_answer2' }}" type="text" ng-model="question.answers[1]">
+                                <label for="{{ 'question' + ($index + 1) + '_answer2' }}" class="active">Answer 2</label>
+                            </div>
+                            <div class="input-field">
+                                <input disabled id="{{ 'question' + ($index + 1) + '_answer3' }}" type="text" ng-model="question.answers[2]">
+                                <label for="{{ 'question' + ($index + 1) + '_answer3' }}" class="active">Answer 3</label>
+                            </div>
+                            <div class="input-field">
+                                <input disabled id="{{ 'question' + ($index + 1) + '_answer4' }}" type="text" ng-model="question.answers[3]">
+                                <label for="{{ 'question' + ($index + 1) + '_answer4' }}" class="active">Answer 4</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn waves-effect waves-light" id="edit-action" ng-click="editAction(beacon.beaconId)">Edit</button>
+                    <button class="hide btn waves-effect waves-light" type="submit" id="update-action" ng-click="updateBeacon(beacon)">Save</button>
+                    <span>{{ updateMessage }}</span>
+                </form>
+            </div>
+        </li>
+    </ul>
+</div>

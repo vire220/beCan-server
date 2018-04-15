@@ -1,3 +1,3 @@
 // public/core.js
 
-angular.module('becanMgmt', ['becanController', 'becanService']);
+angular.module('becanMgmt', ['ngRoute', 'appRoutes', 'jsonFormatter', 'becanController', 'becanService']);

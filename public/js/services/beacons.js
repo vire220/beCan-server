@@ -10,6 +10,9 @@ angular.module('becanService', [])
         create : function(beaconData) {
             return $http.post('/api/beacons', beaconData);
         },
+        update: function(id, beaconData) {
+            return $http.put('/api/beacons/' + id, beaconData);
+        },
         delete : function(id) {
             return $http.delete('/api/beacons/' + id);
         }

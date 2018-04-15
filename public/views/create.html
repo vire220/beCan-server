@@ -1,0 +1,35 @@
+<div>
+    <div class="row">
+        <form class="col s12">
+            <div class="card">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="beacon-id" class="validate" type="text" ng-model="formData.beaconId">
+                            <label for="beacon-id">Beacon ID</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="beacon-name" class="validate" type="text" ng-model="formData.name">
+                            <label for="beacon-name">Beacon Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="beacon-desc" class="materialize-textarea" ng-model="formData.description"></textarea>
+                            <label for="beacon-desc">Description</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="beacon-clue" class="materialize-textarea" ng-model="formData.clue"></textarea>
+                            <label for="beacon-clue">Clue</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <button class="btn waves-effect waves-light" type="submit" name="create-action" ng-click="createBeacon()">Submit</button>
+                </div>
+        </form>
+        </div>
+    </div>
+</div>
