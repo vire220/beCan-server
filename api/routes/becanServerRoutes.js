@@ -32,7 +32,9 @@ module.exports = function(app) {
   .get(becanCtrl.findFirstBeaconInSequence);
 
   //get beacons in the sequence
-  app.route('/api/sequences/:seqId/beacons');
+  app.route('/api/sequences/:seqId/beacons')
+  .get(becanCtrl.getAllBeaconsInSequence)
+  .put(becanCtrl.setSequenceBeacons);
 
   //get beacon from sequence by ID
   app.route('/api/sequences/:seqId/beacons/:beaconId');

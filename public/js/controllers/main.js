@@ -23,6 +23,7 @@ angular.module('becanController')
         // when submitting the add form, send the text to the node API
         $scope.createBeacon = function() {
             if (!$.isEmptyObject($scope.formData)) {
+                $scope.formData.enabled = true;
                 Beacons.create($scope.formData)
                     .success(function(data) {
                         $scope.formData = {}; // clear the form so our user is ready to enter another

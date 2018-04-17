@@ -84,6 +84,26 @@ exports.findFirstBeaconInSequence = function(req, res) {
   });
 };
 
+exports.getAllBeaconsInSequence = function(req, res) {
+  Sequence.findOne({ 'sequenceId': req.params.sequenceId }).populate('beacons').exec(function(err, sequence) {
+    if (err) {
+      res.send(err);
+    }
+    res.send(sequence.beacons);
+  });
+};
+
+exports.setSequenceBeacons = function(req, res) {
+  Sequence.findOneAndUpdate({ 'sequenceId': req.params.sequenceId }, req.body, { new: true }, function(err, sequence) {
+    if (err) {
+      winston.error(err);
+      res.send(err);
+    }
+    res.json(sequence);
+  });
+};
+
+
 exports.createNewSequence = function(req, res) {
   var newSequence = new Sequence(req.body);
   newSequence.save(function(err, sequence) {
